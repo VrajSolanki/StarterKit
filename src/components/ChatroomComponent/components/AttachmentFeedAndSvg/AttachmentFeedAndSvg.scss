@@ -1,0 +1,163 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+
+}
+.attachmentViewer{
+  background: rgba(55,55,55,.6);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.crossSvg{
+  background: black;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  border-radius: 0 0 0 40px;
+  cursor: pointer;
+}
+.closeIcon{
+  margin-left: 14px;
+  margin-top: 8px;
+}
+
+.viewerContainer{
+  position: relative;
+  margin-top: 60px;
+  max-height: 84%;
+  max-width: 100%;
+  overflow: scroll;
+  // transform: translate3d(264px, 0, 0);
+  // transition: all 0.2s ease;
+}
+
+.attachmentViewerAnimationClass{
+  transform: scale(0);
+  transition: all 0.5s ease;
+  max-height: 84%;
+  max-width: 100%;
+  overflow: scroll;
+}
+.attachmentDiv{
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
+  height:80%;
+  margin-top: 16px;
+}
+.zoomUnzoom{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 16px;
+  left: 650px;
+}
+.zoomContainer{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,.5);
+  margin-left: 4px;
+  margin-right: 4px;
+  &:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+.plusAndMinusIcon{
+  margin-left: 5px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.attachmentFeed {
+  //padding: 40px;
+  display: flex;
+  // flex: 1;
+  // flex-grow: 1;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.attachmentItemAndCancel{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  flex-shrink: 0;
+  border-bottom: 1px solid $chrome;
+  box-sizing: border-box;
+}
+
+.attachmentItemAndCancel:hover .cancelSvgContainer{ visibility: visible; }
+
+.cancelSvgContainer{
+  visibility: hidden;
+  height: 24px;
+  width: 24px;
+  line-height: 72px;
+  align-items: center;
+}
+.downloadSvgContainer{
+  composes:cancelSvgContainer;
+  margin-right: 16px;
+}
+
+.attachmentItem{
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  box-sizing: border-box;
+  //border-bottom: 1px solid $chrome;
+}
+.svgContainer{
+  height: 64px;
+  width: 64px;
+  border: 1px solid $chrome;
+}
+.svgItem{
+  fill: black;
+}
+.attachmentTypeText {
+  color: $chrome;
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+.attachmentNameAndType{
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  word-break: break-all;
+}
+.attachmentImage{
+  height: 64px;
+  width: 64px;
+  background-color: #ccc;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $chrome;
+}
+.attachmentName{
+  margin-left: 16px;
+  display: flex;
+  height: 36px;
+  width: 92%;
+  font-size: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  align-items: center;
+}

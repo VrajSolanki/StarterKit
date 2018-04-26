@@ -1,0 +1,110 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  min-width: 440px;
+  z-index: 1000;
+  background-color: $lead;
+}
+.header{
+  display: flex;
+  color: $chrome;
+  height: 56px;
+  align-items: center;
+  //justify-content: center;
+  //font-family: 'Avenir Next LT W01 Demi';
+  flex-shrink: 0;
+  padding: 0px 32px;
+  padding-top: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.headerDetails{
+  display: flex;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  color:$soapstone;
+  font-family: 'AvenirNextLTW01-Medium';
+}
+.hr{
+  border: none;
+  height: 1px;
+  width: 84%;
+  margin: 0;
+  //color: $chrome;
+  align-self: center;
+  background-color: $chrome;
+}
+.row{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #fff;
+  padding-bottom: 16px;
+  //height: 40px;
+  flex-shrink: 0;
+}
+.eventsContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.events{
+  //border-top: 1px solid $chrome;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 16px 32px;
+}
+.label{
+  display: flex;
+  max-width: 144px;
+  align-items: center;
+  font-size: 13px;
+}
+.dateAndEdit{
+  max-width: 220px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.date{
+  display: flex;
+  justify-content: flex-start;
+}
+.editSvg{
+  display: block;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  margin-left: 16px;
+  line-height: 1.6rem;
+  fill: $soapstone;
+  margin-top: 4px;
+}
+.addSvg{
+  display: block;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  fill: $soapstone;
+}
+.deleteSvg{
+  display: block;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  margin-left: 16px;
+  line-height: 1.6rem;
+  fill: $soapstone;
+  margin-top: 4px;
+
+}

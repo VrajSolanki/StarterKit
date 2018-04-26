@@ -1,0 +1,70 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.commentDiv{
+  display: flex;
+  min-height: 136px;
+  border-top: 1px solid $chrome;
+  justify-content: space-around;
+  padding: 24px 24px 16px 32px;
+}
+.actionSvg{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+.svgContainer{
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  cursor: pointer;
+  &:hover{
+    fill: $ocean;
+  }
+}
+
+.messageSendSvg{
+  composes: svgContainer;
+  margin-top: 4px;
+}
+
+.response_textField {
+  display: flex;
+  padding-top: 8px;
+  padding-left: 16px;
+  width: 88%;
+  height: 100%;
+  border-radius: 0px;
+  border: none;
+  resize: none;
+  word-wrap: break-word;
+  //word-break: break-all;
+  color: $nickel;
+  &:focus{
+    outline: none;
+  }
+}
+.enterSvg{
+  padding: 2px;
+  margin-bottom: 2px;
+  width: 24px;
+  margin-top: 20px;
+  line-height: 60px;
+  align-items: center;
+  cursor: pointer;
+  &:hover{
+    fill: $ocean;
+  }
+}
+.profilePic{
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid $chalk;
+}

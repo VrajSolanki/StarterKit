@@ -1,0 +1,35 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  display: flex;
+  flex: 1;
+  height: "100%";
+  width: "100%";
+}
+.chatIcon{
+  height: 64px;
+  width: 64px;
+}
+.iconContainer{
+  display: flex;
+  position: absolute;
+  top: 628px;
+  left: 340px;
+  cursor: pointer;
+}
+.chatComponentContainer{
+  padding: 16px 0 0 16px 
+}
+.hidden {
+  composes: chatComponentContainer;
+  transition: opacity 600ms, visibility 600ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.visible{
+  composes: chatComponentContainer;
+  transition: opacity 600ms, visibility 600ms;
+  visibility: visible;
+  opacity: 1,
+}

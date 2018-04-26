@@ -1,0 +1,26 @@
+.container{
+  background: #fff;
+  height: 64px;
+  color: #080812;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 16px;
+  min-height: 64px;
+  border-bottom: 1px solid #d7d7db;
+}
+.profileName{
+  color: #4B4B55;
+  font-size: 14px;
+}
+.profileImg{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: 32px;
+}
+.refreshBtn:focus{
+    // border-color: transparent;
+    outline: none;
+}

@@ -1,0 +1,75 @@
+.container{
+  display: flex;
+  // margin: 0 32px 32px 32px;
+  padding: 32px 16px 48px 16px;
+  background: #fff;
+  border-radius: 3px;
+  flex-flow: column;
+  flex: none;
+}
+.themeGradeHolder{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+  align-items: center;
+      padding-left: 32px;
+}
+.gradeSectionText{
+  color: #82828c;
+  font-size: 12px;
+  font-weight: 500;
+      padding-right: 32px
+}
+.curDuration{
+  font-size: 1em
+}
+.themeText{
+  font-size: 24px;
+  color:#24cca8;
+  font-weight: 100;
+}
+.centralIdeaText{
+  font-size: 14px;
+  color:#373741;
+  font-weight: 400;
+  margin-left: 16px;
+  max-width:600px;
+      padding-left: 32px;
+
+}
+
+.conceptsHolder{
+  margin-top: 48px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  // padding-left: 32px;
+  padding: 0 48px 0 32px
+}
+.conceptsBox{
+  color:#868383;
+  // margin-right: 16px;
+  // flex: 1;
+  padding: 0 48px 0 16px;
+}
+.conceptsBoxTitle{
+  color:#080812;
+  font-weight: 500;
+  margin-bottom:8px;
+}
+.conceptItemUL{
+  padding-left: 16px;
+}
+.conceptItem{
+  // line-height: 1.2em;
+  margin-bottom: 0.2em;
+  color: #373741;
+}
+
+.subjectsHolder{
+  margin-top: 32px;
+  display: flex;
+  flex-flow: row  wrap;
+}

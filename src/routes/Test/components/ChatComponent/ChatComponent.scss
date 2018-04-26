@@ -1,0 +1,172 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+$borderRadius: 6px;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 586px;
+  width: 378px;
+  position: relative;
+}
+.topContainer{
+    background-color: blue;
+    display: flex;   
+    flex-basis: 40%;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius
+}
+.bottomContainer{
+    background-color: white;
+    display: flex;   
+    flex-basis: 60%;
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+}
+.overlayDiv{
+    display: flex;   
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.block1{
+    background-color: transparent;
+    height: 200px;
+    width: 90%;
+    padding: 32px 16px;
+    flex-shrink: 0;
+}
+.titleAndWave{  
+    display: flex;
+    padding-bottom: 12px;
+    flex-direction: "row";
+    flex-shrink: 0;
+}
+.block1Title{
+    display: flex;
+    font-family: 'AvenirNextLTW01-Medium';
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1px;
+    flex-direction: "row";
+    flex-shrink: 0;
+    flex-basis: 88%;
+}
+.handWave{
+    display: flex;
+    flex-basis: 10%;
+    height: 36px;
+    width: 36px;
+}
+.block1SubTitle{
+    font-family: 'AvenirNextLTW01-Regular';
+    font-size: 1.8rem;
+    color: $snow;
+    letter-spacing: 0.8px;
+}
+.block2{
+    background-color: white;
+    border-radius: $borderRadius;
+    height: 240px;
+    flex-shrink: 0;
+    border-top: 3px solid #9BACFE;
+    width: 90%;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0px 0px 12px $chrome;
+}
+.contentWrapper{
+    padding: 32px 32px 32px 24px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.startConv{
+    padding-bottom:8px;
+    font-size: 1.6rem;
+}
+.subtitle{
+    padding-bottom:8px;
+    font-size: 1.4rem;
+    color:$soapstone;
+}
+.collaboratorImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    height: 54px;
+}
+.buttonStyles{
+    margin: 16px 0 0 0;
+    width: 60%;
+}
+.findAnswer{
+    font-family: 'AvenirNextLTW01-Medium';
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+.imageAndText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sampleImage{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titleAndSubtitle{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    height: 100%;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    width: 100%;
+    color: $ocean;
+    margin-bottom: 8px;
+}
+.subText{
+    font-size: 1.4rem;
+    color:black;
+    margin-bottom: 16px;
+}
+.newsletter{
+    font-size: 1.6rem;
+    color:black;
+    margin-bottom: 8px;
+}
+.searchBox{
+    display: flex;
+    // height: 64px;
+}
+.contentWrapper2{
+    composes: contentWrapper;
+    height: 60%;
+    border-bottom: 1px solid $snow;
+}
+.upvoteButton{  
+    padding: 32px 32px 32px 24px;
+    display: flex;
+    width: 100%;
+}
+.upvoteButtonStyle{
+    border-radius: 4px;
+    width:100%
+}

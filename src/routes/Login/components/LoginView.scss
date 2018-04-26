@@ -1,0 +1,88 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+.container > *{
+  padding: 0;
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+}
+.googleBtn{
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 88%;
+  color:white;
+  border-radius: 9%/50%;
+  border: none;
+  background-color: #2387FB;
+  outline: none;
+  margin: auto;
+}
+.loginContainer{
+  width: 300px;
+}
+.aside1{
+  //background-color: #4a4a4a;
+  display: flex;
+  flex-basis: 68%;
+  color: #ffffff;
+}
+.imageContainer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.aside2{
+  display: flex;
+  flex-basis: 32%;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+.aisLogo{
+  height: 96px;
+  width: 96px;
+}
+.quoteAndName{
+  margin: 52px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 1.8em;
+  text-align: center;
+}
+.quote{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  color: $lead;
+  font-family: 'Avenir Next LT W01 Demi';
+}
+.authorName{
+  display: flex;
+  color: $lead;
+  font-family: 'Avenir Next LT W01 Demi';
+}
+.tealLabs{
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  color: $soapstone;
+}
+.button{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(242, 108, 85);
+}

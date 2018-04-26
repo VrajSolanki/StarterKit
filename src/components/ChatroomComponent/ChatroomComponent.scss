@@ -1,0 +1,40 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-left: 1px solid $chrome;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.chatFeed{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+.horizontalRule{
+  border: none;
+  height: 1px;
+  background: $chrome;
+  width: 82%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+}
+.chatItem{
+  // display: flex;
+  // flex-grow: 1;
+}
+.commentBox{
+
+}
+.chatItemContainer{
+  width: 100%;
+  display: flex;
+  // flex-grow: 1;
+  flex-direction: column;
+  flex-shrink: 0;
+}

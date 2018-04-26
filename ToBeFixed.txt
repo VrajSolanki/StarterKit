@@ -1,0 +1,5 @@
+- GeneralStats has hardcoded start date end date set to 7days
+  : should come from module or the graph should have all the values preset from backend
+
+- Curriculum Editor :  swtiched off editing for all 
+  : need to implement permissions to enable for particular teacher

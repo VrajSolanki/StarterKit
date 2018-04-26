@@ -1,0 +1,88 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+.container :global{
+  input[type="number"], input[type="text"]{
+    border-radius: 0;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+  }
+  input.rc-time-picker-input{
+    width: 120px;
+  }
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.disabledContainer :global{
+  input[type="number"], input[type="text"]{
+    border-radius: 0;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $chrome;
+    color: #000;
+    background-color: $chrome;
+  }
+  input.rc-time-picker-input{
+    width: 120px;
+  }
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.errorContainer :global{
+  input[type="number"], input[type="text"]{
+    border-radius: 0;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $error;
+    color: #000;
+  }
+  input.rc-time-picker-input{
+    width: 120px;
+  }
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.inputLabel{
+  font-family: "AvenirNextLTW01-DemiCn";
+  font-size: 1.6rem;
+  color:black;
+  letter-spacing: 0.02rem;
+}
+.error{
+  display: flex;
+  flex-grow: 0;
+  font-size: 1.3rem;
+  color:$error;
+  margin-top: 6px;
+  height: 16px;
+}
+
+.inputLabelDisabled{
+  font-family: "AvenirNextLTW01-DemiCn";
+  font-size: 1.6rem;
+  color:$chrome;
+  letter-spacing: 0.02rem;
+}

@@ -1,0 +1,84 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+@import "~components/UIElements/sass/mixins/buttons";
+
+.activeButton{
+
+  border: 1px solid transparent;
+
+  text-align: center;
+
+  cursor: pointer;
+  overflow: hidden; // contain gradient on IE9
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-appearance: none;
+
+  @include font-body-bd2();
+  min-width: 112px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 18%/50%;
+  border: 2px solid $ocean;
+  @include button-variant($chalk, $lead,$ocean,$orchid,$orchid);
+}
+
+.dropDownDiv{
+  z-index: 999;
+  width: 224px;
+  position: absolute;
+  top: 64px;
+  right: 40px;
+  //padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: $snow;
+  color: $concrete;
+  border-radius: 4px;
+  border: 2px solid $chalk;
+  cursor: pointer;
+  background-color: white;
+}
+
+.dropDownItem{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  height: 36px;
+  padding: 6px 16px;
+  &:hover{
+    background-color: $chrome;
+    color:$nickel;
+  }
+  &:not(:last-child){
+    //border-bottom: 1px dashed $soapstone;
+  }
+}
+.homeworkSymbol{
+  height: 24px;
+  width: 24px;
+}
+.homeworkSymbolWc{
+  // margin-right: 2px;
+  height: 24px;
+  width: 24px;
+  //margin-left: 2px;
+}
+.svgElement{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.optionTitle{
+  line-height: 24px;
+  align-items: center;
+}
+.svgItemContainer{
+  display: flex;
+  line-height: 36px;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+}

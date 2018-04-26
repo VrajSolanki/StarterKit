@@ -1,0 +1,92 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 4px;
+  cursor: default;
+}
+.modalContent{
+  display: flex;
+  flex-grow: 0;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 616px;
+  height: 312px;
+  border-radius: 4px;
+}
+.modalHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  background-color: $snow;
+  padding: 0 24px;
+  font-size: 1.6rem;
+  font-family: 'AvenirNextLTW01-Medium';
+  border-radius: 4px;
+}
+.modalFooter{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 24px;
+}
+.button1 {
+  color: $lead;
+  background-color: $chalk;
+  &:hover{
+    color: $lead;
+    background:  $smoke;
+  }
+  &:focus{
+    color: $lead;
+    background: $chalk;
+    border: 2px solid #CDCDD2;
+  }
+}
+.button2, .button1{
+  font-size: 1.4rem
+}
+.button2{
+  background-color: #007AFF;
+  &:hover{
+    background: #2687FB;
+    border:0px;
+  }
+  &:focus{
+    background: #2687FB;
+    border: 2px solid #007AFF;
+  }
+}
+.button1Div{
+  display: flex;
+  flex-basis: 24%;
+}
+.modalBody{
+  padding: 36px 24px 40px 24px;
+}
+.cancelSvg{
+  cursor: pointer;
+  fill: #CDCDD2;
+}

@@ -1,0 +1,155 @@
+@import "~components/UIElements/sass/variables";
+
+.container{
+  cursor: default;
+}
+.progressBarContainer{
+  margin-top: 16px;
+}
+
+.commentBody{
+  display: flex;
+  flex-direction: row;
+  margin: 32px 0;
+}
+.inputElement{
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.inputElementText{
+  width: 64px;
+}
+.comment {
+  width: 100%;
+  // height: 60px;
+  padding: 16px 0px;
+  background-color: $white;
+  border: 0px;
+  border-bottom: 2px solid $concrete;
+  word-break: break-all;
+  color: $nickel;
+  &:focus{
+    outline: none;
+  }
+}
+.dropZoneContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $snow;
+  border-style: dashed;
+}
+.displayText{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.optionalText{
+  padding-right: 16px;
+  color: $smoke;
+  font: 14px;
+}
+.enterCommentText{
+  color: $nickel;
+  font: 14px;
+}
+.dropZone{
+  cursor: pointer;
+  height: 240px;
+  text-align: center;
+  //border: 2px solid #d9d9d9;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.upload{
+  width: 48px;
+  height: 48px;
+}
+.dropZoneActive{
+  background-color: #ccc;
+}
+.imageDropZone{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.imageText{
+  width:100%;
+  outline: none;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-align: center;
+
+  //margin-bottom: 24px;
+}
+.headerStyle{
+  border-radius: 6px 6px 0px 0px;
+  background-color: #F0F0F3;
+  min-height:64px;
+  padding:0px 24px;
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content:space-between;
+  align-items:center
+}
+.bodyStyle{
+  padding: 24px;
+}
+.footerStyle{
+  border: 0px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.violateImageFormats{
+  margin-top: 8px;
+  color: $tungsten;
+  font-size: 10px;
+  text-align: center;
+}
+.uploadProgress{
+  width: 100%;
+  max-height: 56px;
+}
+.button1Div{
+  display: flex;
+  flex-basis: 24%;
+}
+.button1 {
+  color: $lead;
+  background-color: $chalk;
+  margin-right: 24px;
+  &:hover{
+    color: $lead;
+    background:  $smoke;
+  }
+  &:focus{
+    color: $lead;
+    background: $chalk;
+    border: 2px solid #CDCDD2;
+  }
+}
+.button2, .button1{
+  font-size: 1.4rem
+}
+.button2{
+  background-color: #007AFF;
+  margin-right: 24px;
+  &:hover{
+    background: #2687FB;
+    border:0px;
+  }
+  &:focus{
+    background: #2687FB;
+    border: 2px solid #007AFF;
+  }
+}

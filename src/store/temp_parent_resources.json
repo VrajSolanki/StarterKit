@@ -1,0 +1,13 @@
+{
+  "grade":"6",
+  "resources":[
+    {"title":"If I Should Have a Daughter by Sarah Kay","content":"https://www.youtube.com/watch?v=0snNB1yS3IE","type":"YOUTUBE_VIDEO"},
+    {"title":"How Much Sleep Do You Actually Need?","content":"https://www.youtube.com/watch?v=SVQlcxiQlzI","type":"YOUTUBE_VIDEO"},
+    {"title":"How Playing Sports Benefits Your Brain and Your Body","content":"https://www.youtube.com/watch?v=hmFQqjMF_f0","type":"YOUTUBE_VIDEO"},
+    {"title":"Being A Good Listener","content":"https://www.youtube.com/watch?v=-BdbiZcNBXg","type":"YOUTUBE_VIDEO"},
+    {"title":"Great Children's Books Celebrating Science","content":"https://www.brainpickings.org/2014/11/28/childrens-books-science/","type":"ARTICLE_LINK"},
+    {"title":"The Alan Kazdin Method for Making Your Children Behave","content":"http://www.theatlantic.com/health/archive/2016/03/no-spanking-no-time-out-no-problems/475440/","type":"ARTICLE_LINK"},
+    {"title":"Fixed vs. Growth: The Two Basic Mindsets That Shape Our Lives","content":"https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/","type":"ARTICLE_LINK"},
+    {"title":"When Kids Are Bullied, What Can Parents Do?","content":"https://ww2.kqed.org/mindshift/2016/04/29/when-kids-are-bullied-what-can-parents-do/","type":"ARTICLE_LINK"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "grade":"7",
+  "section":"C",
+  "teachers":[
+    {"name":"Dipali Mone","desg":"Home Room Teacher","email":"dipali.mone@aischool.net"},
+    {"name":"Hema K","desg":"Grade coordinator","email":"hema.k@aischool.net"},
+    {"name":"Dr. Tarulata Hirani","desg":"Head of School","email":"tarulata@aischool.net"}
+  ]
+}

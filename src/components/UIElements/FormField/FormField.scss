@@ -1,0 +1,204 @@
+@import "../sass/variables";
+@import "../sass/mixins/typography";
+
+
+
+// Base styles
+// ------------------------------
+
+.field{
+  display: block;
+  margin: 0;
+  box-shadow: none;
+  border-width:0;
+  border:none;
+  color: $nickel;
+  &::-webkit-input-placeholder {
+    color: $chrome;
+  }
+  &:hover{
+    outline:none;
+    border: 1px solid $smoke;
+    &::-webkit-input-placeholder {
+      color: $marble;
+    }
+  }
+  &:focus{
+    outline:none;
+    border: 1px solid $chrome;
+    &::-webkit-input-placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+
+// Size styles
+// ------------------------------
+
+.field--xs{
+  width: 120px;
+  height: 24px;
+  border-radius:2px;
+  padding-left:8px;
+}
+
+.field--sm{
+  width: 160px;
+  height: 32px;
+  border-radius:2px;
+  padding-left:8px;
+}
+
+.field--md{
+  width: 200px;
+  height: 40px;
+  border-radius:2px;
+  & input {
+    padding-left:16px;
+  }
+}
+
+.field--lg{
+  width: 280px;
+  height: 48px;
+  border-radius:2px;
+  padding-left:16px;
+}
+
+
+// label styles
+// ------------------------------
+
+label{
+  display: block;
+  text-align: left;
+}
+
+.label--normal{
+  color: $soapstone;
+}
+
+.label--capsule{
+  color: $soapstone;
+}
+
+.label--normal-dark{
+  color: $nickel;
+}
+
+.label--xs {
+  @include font-heading-h6;
+
+}
+
+.label--sm {
+  @include font-heading-h6;
+}
+
+.label--md {
+  @include font-heading-h5;
+}
+
+.label--lg {
+  @include font-heading-h4;
+}
+
+
+.field--xs{
+  @include font-body-bd5;
+  &::-webkit-input-placeholder {
+    @include font-body-bd5;
+  }
+  &:hover{
+    &::-webkit-input-placeholder {
+      @include font-body-bd5;
+    }
+  }
+}
+
+.field--sm{
+  @include font-body-bd5;
+  &::-webkit-input-placeholder {
+    @include font-body-bd5;
+  }
+  &:hover{
+    &::-webkit-input-placeholder {
+      @include font-body-bd5;
+    }
+  }
+}
+
+.field--md{
+  @include font-body-bd4;
+  &::-webkit-input-placeholder {
+    @include font-body-bd4;
+  }
+  &:hover{
+    &::-webkit-input-placeholder {
+      @include font-body-bd4;
+    }
+  }
+}
+
+.field--lg{
+  @include font-body-bd3;
+  &::-webkit-input-placeholder {
+    @include font-body-bd3;
+  }
+  &:hover{
+    &::-webkit-input-placeholder {
+      @include font-body-bd3;
+    }
+  }
+}
+
+
+.errorMsg{
+  text-align: left;
+  color: red;
+  margin-top: 8px;
+  @include font-body-bd4;
+}
+
+.field-error{
+  border: 1px solid red;
+  &:hover{
+    border: 1px solid red ;
+  }
+  &:focus{
+    border: 1px solid $chrome;
+  }
+}
+
+.field--capsule {
+  border-radius: 10%/50% !important;
+}
+
+.field--normal-dark{
+  background-color : $tungsten;
+  color: $soapstone;
+  &::-webkit-input-placeholder {
+    color: $pepper !important;
+  }
+  &:hover{
+    border: 1px solid $pencil;
+    &::-webkit-input-placeholder {
+      color: $nickel !important;
+    }
+  }
+  &:focus{
+    outline:none;
+    border: 1px solid $pepper;
+  }
+
+}
+
+.field-inactive {
+  background-color: $chalk;
+  color: $concrete;
+}
+
+.label-inactive {
+  color: $granite;
+}

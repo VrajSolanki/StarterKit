@@ -1,0 +1,64 @@
+.container {
+    position:relative;
+    display: flex;
+    flex-flow: column;
+    // padding: 16px;
+    background: #fff;
+}
+.contentHolder{
+  padding: 0 32px 32px 32px;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.appItemcontainer{
+  display: flex;
+  flex: none;
+  padding: 32px 0;
+  margin: 0 32px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+}
+.appItemcontainer:last-child{
+  border: none;
+}
+
+.AppIcon{
+  border-radius: 20px;
+  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.AppIcon:hover{
+  background-color: rgba(#ededed, 0.8);
+}
+.AppInfo{
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  width: 168px;
+      justify-content: center;
+}
+.AppName{
+  color: #080812;
+  font-weight: 500;
+  justify-content: center;
+}
+.AppCategory{
+  color: #9a9a9a;
+  margin: 0 auto;
+  justify-content: center;
+}
+.AppDescription  {
+  color: #1c1c1c;
+  padding: 8px;
+  border-radius: 3px;
+  flex: 1;
+  margin-left: 32px;
+
+}
+.descriptionText{
+  margin-top: 12px;
+  line-height: 1.6em;
+  color: #373741;
+}

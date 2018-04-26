@@ -1,0 +1,52 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+}
+.userName{
+  padding-left: 24px;
+  display: flex;
+  align-self: center;
+  flex-grow: 1;
+  flex-basis: 30%;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-family: 'AvenirNextLTW01-Medium';
+  color: $lead;
+}
+.createdDate{
+  display: flex;
+  align-self: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  color: $soapstone;
+  font-size: 1.2rem;
+}
+.userDetailsAndDate{
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+}
+.profilePic{
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  border: 1px solid $chalk;
+}
+.message{
+  display: flex;
+  padding-left: 56px;
+  resize: none;
+  border: none;
+  color: $granite;
+  white-space: pre-wrap;
+}
