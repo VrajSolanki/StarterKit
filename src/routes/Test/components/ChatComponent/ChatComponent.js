@@ -26,7 +26,7 @@ export default class ChatComponent extends Component {
             
             <div className={classes.block1}>
                     <div className={classes.titleAndWave}>
-                        <div className={classes.block1Title}>Hi, we're Intercom</div>
+                        <div className={classes.block1Title}>{`Hi, we're Intercom`}</div>
                         <img className={classes.handWave} src={"https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/waving-hand-sign_1f44b.png"}></img>
                     </div>
                     
